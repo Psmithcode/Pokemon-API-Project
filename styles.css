@@ -50,9 +50,15 @@ body {
   grid-template-areas:
     "name id"
     "type image";
-  background-color: white;
+  /* background-color: white; */
   margin: 10px;
+  border-radius: 10px;
 }
+
+.pokemon .active {
+  border: 2px solid red;
+}
+
 .pokemon-id {
   grid-area: id;
   font-size: 2rem;
@@ -68,6 +74,14 @@ body {
 }
 .pokemon-image {
   grid-area: image;
+  height: 100%;
+  width: 100%;
+}
+
+.pokemon-image > img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .pokemon-type {
   grid-area: type;
@@ -83,5 +97,5 @@ body {
   font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.1);
   letter-spacing: 3px;
-  padding: 5px;
+  padding: 0 5px 0 5px;
 }
