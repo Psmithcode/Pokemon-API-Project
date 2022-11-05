@@ -1,8 +1,48 @@
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣩⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢛⡛⢿⣿⣿⣿⣿⡇⣿⡎⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⢿⣷⣝⢿⣿⣿⡿⣿⣷⢻⣿⣿⣿⣿⣿⣿⣿⣿⢫⣙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢛⣵⢆⣿⣿⣧⡻⣿⣷⣍⡩⣷⣿⣿⣎⢿⣿⣿⣿⣿⣿⣿⣿⣦⠻⣷⣝⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢟⣩⣾⡟⣡⣿⣿⣿⣿⣧⢻⣿⣿⣿⣿⣿⣿⣿⡎⣿⣿⣿⣿⣿⣿⣿⣿⣷⢹⣿⣿⣶⣮⣝⡻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⢟⣥⣾⣿⣿⣿⢸⣿⣿⣿⣿⣿⡿⣸⣿⢛⢿⣿⣿⣿⡿⠃⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⡟⠁⠀⠈⠉⠛⠻⠶⣮⠻⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⡿⣡⡾⠋⠁⠀⠀⢹⡸⣿⣿⣿⣿⣿⣇⢿⣿⣽⣀⡙⢏⣿⣿⣴⢻⣿⣿⣿⣿⣿⣿⣿⡏⣾⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡹⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⢋⡾⠋⠀⠀⠀⠀⠀⠀⢧⢻⣿⣿⣿⣿⣿⣎⠫⣛⢿⣿⣿⣿⣿⣿⣷⢹⣿⣿⣿⣿⣿⣿⢣⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⡜⣿⣿⣿⣿⣿
+// ⣿⣿⣿⢃⡟⠁⠀⠀⠀⠀⠀⠀⠀⠘⢧⡹⣿⣿⣿⣿⣿⡼⣮⡳⠙⣿⣖⣶⣿⢣⣿⣿⣿⣿⣿⣿⡟⣼⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠜⢿⣿⣿⣿
+// ⣿⣿⡏⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣎⢿⣿⣿⣿⡇⣿⣿⣬⣒⢒⣦⣴⣿⣿⣿⣿⣿⣿⣿⢣⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢎⢻⣿⣿
+// ⣿⣿⢰⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡼⣿⣿⣿⡇⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿⣿⡿⣣⡾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣧⠹⣿
+// ⣿⡇⡎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢧⠹⣿⣿⢹⣿⣿⣿⣿⣧⢻⣿⣿⣿⣿⢟⣩⠞⠁⣾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⣿
+// ⣿⢰⠁⠀⠀⠀⠀⢀⢤⡠⡀⠀⠀⠀⠀⠀⠀⠘⢷⡙⠟⣼⣿⣿⣿⣿⣿⡎⠿⣛⣭⡶⠁⢶⣄⣴⣷⡧⡀⠀⠀⠀⠀⣀⠀⠀⣰⣶⣄⡀⠀⠀⠀⠀⢧⢹
+// ⡏⢸⠀⠀⣠⣾⡇⠟⣽⢻⠼⣣⠀⠀⣀⣀⠀⠀⢀⣙⢱⣿⣿⣿⣿⣿⣭⣶⣶⣮⠋⠀⠀⠱⣾⣟⣽⣑⡫⠀⢀⣶⣾⣿⣆⢤⡿⠿⢟⣿⣦⡀⠀⠀⢸⢸
+// ⣧⢸⣰⣿⣿⣿⢁⣛⢿⣮⣭⣷⣜⠿⠿⢿⣛⣴⡿⢣⠿⠟⠛⠿⣿⣿⣿⣿⣿⣿⣦⡀⢠⣶⢼⣷⡿⣋⠀⠀⠿⢿⣿⣿⣿⣷⢷⣵⣿⣿⣿⣿⣦⡀⢸⢸
+// ⣿⣀⣿⣿⣿⣿⣷⣿⣶⣦⣬⡛⠿⣿⣾⠿⢟⡫⢀⣵⣿⣿⣿⣿⣦⡙⢿⣿⣯⣝⡻⢿⣾⢍⣼⣿⢣⣿⣆⣠⣄⠀⠏⢯⠻⣱⣿⣿⣿⣿⣿⣿⣿⣿⡜⢸
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣾⣿⢣⣿⣿⣿⣿⣿⣿⣿⣿⣎⢿⣿⣿⣿⣦⡙⠿⡿⢋⣾⣿⣿⣿⣿⣶⣾⡎⣷⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡎⣿⣿⣿⣿⣷⡰⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣷⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣎⢻⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢣⣿⡆⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣧⠹⣿⣿⣿⣿⣿⣿⠏⣼⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢁⣿⣿⣧⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣾⣿⣿⣿⣿⣿⣿⣇⢻⣿⣿⣿⡿⢋⣾⣿⣿⡿⣸⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡘⣿⣿⣿⣧⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⠘⠟⣛⣩⣴⣿⣿⣿⣿⢇⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⢿⣿⣿⣿⣌⡻⣿⣿⣿⣿⣿⣿⣿⡜⣿⣿⡿⣿⣿⣿⣿⣿⢰⣿⣿⣿⣿⣿⣿⡿⢋⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⠿⢟⣵⣷⣾⣿⣿⣿⢫⣤⣍⠛⠿⠿⠿⣿⣷⡜⢿⣿⣿⣿⣿⣿⡇⣾⣿⣿⣿⡿⢟⡫⣢⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⢯⣿⣿⣯⣿⣿⣿⣯⡷⣛⣭⠿⣿⣿⣿⣿⠿⣠⣿⣿⣿⣮⣝⡻⢿⣿⣿⣷⢨⣽⣿⣿⣿⣦⡙⣛⣭⡵⢞⣥⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣹⣭⠭⢾⣓⣙⣭⣶⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣭⡅⡟⣛⢿⡿⣛⢿⣟⣈⢵⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣜⢿⢎⣘⢿⡏⣬⣛⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+// ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⣿⣷⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
+
+
+
+
+
+
+// Starts the function once the html loads
 window.onload = getPokemon;
-// const pageContainer = document.getElementById("page-container");
+
 let pokemonDisplay = document.getElementById("pokemon-display");
 
+// This is the pokemon array where we'll store the objects from the API
+// There is an empty object in here becuase we wanted the 1st pokemon to have an index of 1, not 0
 let pokemonArray = [{}];
+
+// vv For the pokemonDisplay html element to have different colors, we opted to use this object to store the colors for the different types vv
 
 const colors = {
   fire: "#FDDFDF",
@@ -23,6 +63,8 @@ const colors = {
   ice: "#d0fdff",
 };
 
+// To call the pokemon api, we used an async function to make the for loop wait on the promise before continuing
+
 async function getPokemon() {
   for (let i = 1; i < 152; i++) {
     const response = await fetch(
@@ -33,15 +75,18 @@ async function getPokemon() {
     const todo = await response.json();
     pokemonArray.push(todo);
   }
-  console.log(pokemonArray);
   displayPokemon();
   return pokemonArray;
 }
 
+// To display the pokemon objects as HTML, we created a div element and 4 child elements with the information we wanted to display.
+
 const displayPokemon = () => {
   for (let i = 1; i <= pokemonArray.length; i++) {
+    // Just setting up a few variables
     const type = pokemonArray[i].types[0].type.name;
     const color = colors[type];
+    // pokeDiv is the body of each pokemon
     const pokeDiv = document.createElement("div");
     pokeDiv.setAttribute("onclick", "battlePokemon(this.id)");
     pokeDiv.classList.add("pokemon");
@@ -49,7 +94,6 @@ const displayPokemon = () => {
     // Name
     const pokemonNameContainer = document.createElement("p");
     pokemonNameContainer.classList.add("pokemon-name");
-    // const pokemonName = document.createTextNode(pokemonArray[i].name);
     pokemonNameContainer.innerText = pokemonArray[i].name;
     // Image
     const pokeImageContainer = document.createElement("div");
@@ -59,7 +103,6 @@ const displayPokemon = () => {
     pokeImageContainer.classList.add("pokemon-image");
     // Id
     const pokeIdContainer = document.createElement("p");
-    // const pokeId = document.createTextNode(pokemonArray[i].id);
     pokeIdContainer.innerText = pokemonArray[i].id;
     pokeIdContainer.classList.add("pokemon-id");
 
@@ -72,7 +115,7 @@ const displayPokemon = () => {
       pokemonTypeContainer.appendChild(pokeType);
     }
     pokemonTypeContainer.classList.add("pokemon-type");
-    //
+    // Lastly we just append everything to the pokediv and use css grid to organize them
     pokeDiv.appendChild(pokemonNameContainer);
     pokeDiv.appendChild(pokeIdContainer);
     pokeDiv.appendChild(pokeImageContainer);
@@ -84,28 +127,28 @@ const displayPokemon = () => {
   console.log(pokemonArray);
 };
 
+// BATTLING SYSTEM
+// This is kind of a hack butttttt
+// We start by creating two variables that hold the values of the last pokemon clicked on
 let lastPokemon = "";
 let lastBaseStat = 0;
+// we are passing in (this.id) into our function as 'element'
 const battlePokemon = (element) => {
   console.log("battle pokemon");
-  // element.classList.add('active')
+  // Then we compare if the .base_stat of which pokemon is higher
   if (pokemonArray[element].stats[0].base_stat > lastBaseStat) {
+    // the id of the html element is equal to the pokemons id, making it easy  to use it as an index in bracket notation
     window.alert(`${pokemonArray[element].name} wins!`);
   } else if (pokemonArray[element].stats[0].base_stat < lastBaseStat) {
     window.alert(`${lastPokemon} wins!`);
   }
-  // identify the pokemon we clicked on
+// Lastly, we assigned the element to the last pokemon clicked on variables
   for (let i = 1; i <= pokemonArray.length; i++) {
     if (element == pokemonArray[i - 1].id) {
       lastPokemon = pokemonArray[i - 1].name;
       lastBaseStat = pokemonArray[i - 1].stats[0].base_stat;
-      // console.log(pokemonArray[i].name);
-      // console.log(pokemonArray[i].stats[0].base_stat);
     }
   }
-  // find its base stat
-  // create a variable to represent the stat
-  //
 };
 
-// window.onload(displayPokemon());
+
