@@ -27,12 +27,6 @@
 // ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣜⢿⢎⣘⢿⡏⣬⣛⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 // ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣾⣿⣷⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 
-
-
-
-
-
-
 // Starts the function once the html loads
 window.onload = getPokemon;
 
@@ -66,7 +60,7 @@ const colors = {
 // To call the pokemon api, we used an async function to make the for loop wait on the promise before continuing
 
 async function getPokemon() {
-  for (let i = 1; i < 152; i++) {
+  for (let i = 1; i < 495; i++) {
     const response = await fetch(
       `https://pokeapi.co/api/v2/pokemon/${i}/
 
@@ -142,7 +136,7 @@ const battlePokemon = (element) => {
   } else if (pokemonArray[element].stats[0].base_stat < lastBaseStat) {
     window.alert(`${lastPokemon} wins!`);
   }
-// Lastly, we assigned the element to the last pokemon clicked on variables
+  // Lastly, we assigned the element to the last pokemon clicked on variables
   for (let i = 1; i <= pokemonArray.length; i++) {
     if (element == pokemonArray[i - 1].id) {
       lastPokemon = pokemonArray[i - 1].name;
@@ -150,5 +144,3 @@ const battlePokemon = (element) => {
     }
   }
 };
-
-
